@@ -12,6 +12,8 @@ namespace CVVTuberExample
     {
         public Button loadVRMButton;
 
+        public string defaultDirectory = "C:/Users/aise-member/Desktop/VRMAvatars";
+
         public RuntimeVRMMetaLoader runtimeVRMMetaLoader;
 
         [Space]
@@ -37,11 +39,13 @@ namespace CVVTuberExample
 
             // The “Load VRM” button is only enabled on editor runs where the file selection dialog is available.
             // To enable this feature on other platforms, consider adding a plugin such as “UnityStandaloneFileBrowser”.
-#if !UNITY_EDITOR
+           /*
             if (loadVRMButton != null)
                 loadVRMButton.interactable = false;
-#endif
+           */
+
         }
+            
 
         /// <summary>
         /// Raises the back button click event.
@@ -73,11 +77,14 @@ namespace CVVTuberExample
                new ExtensionFilter("VRM Files", "vrm", "VRM"),
             };
 
+    
             if (runtimeVRMMetaLoader != null)
             {
-                var path = UnityEditor.EditorUtility.OpenFilePanel("Open VRM", "", "vrm");
+                var paths = StandaloneFileBrowser.OpenFilePanel("Load VRM File", defaultDirectory, extensions, true);
+                string path = paths[0];
                 runtimeVRMMetaLoader.vrmFilePath = path;
-                //var path = runtimeVRMMetaLoader.vrmFilePath;
+
+                // var path = runtimeVRMMetaLoader.vrmFilePath;
                 if (string.IsNullOrEmpty(path))
                 {
                     yield break;

@@ -845,7 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.196, g: 0.196, b: 0.196, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2792,6 +2792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadVRMButton: {fileID: 1122981242}
+  defaultDirectory: C:/Users/aise-member/Desktop/VRMAvatars
   runtimeVRMMetaLoader: {fileID: 1890203518}
   vRMControllManager: {fileID: 998394997}
   webCamTextureMatSourceGetter: {fileID: 715847199}

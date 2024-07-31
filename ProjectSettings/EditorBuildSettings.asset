@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/CVVTuberExample/CVVTuberExample.unity
-    guid: c74a8a104a6b5cf448c2515254b9cfd7
+    guid: 61d97292b05021147b3d0fb57130d501
   - enabled: 1
     path: Assets/CVVTuberExample/ShowOpenCVLicense.unity
     guid: 7b60dc199325bb9479589e73f931107f
