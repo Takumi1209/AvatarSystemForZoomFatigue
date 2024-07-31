@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuberExample.unity
+    guid: c74a8a104a6b5cf448c2515254b9cfd7
+  - enabled: 1
+    path: Assets/CVVTuberExample/ShowOpenCVLicense.unity
+    guid: 7b60dc199325bb9479589e73f931107f
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuber/Examples/VideoCaptureCVVTuberExample/VideoCaptureCVVTuberExample_Built-in.unity
+    guid: b947375c0f429e94eaaa88a2adcdde8c
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuber/Examples/VideoCaptureCVVTuberExample/VideoCaptureCVVTuberExample_SRP.unity
+    guid: 3b8f038b28ae59f459dbf3290877d549
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuber/Examples/WebCamTextureCVVTuberExample/WebCamTextureCVVTuberExample_Built-in.unity
+    guid: 3547b45d3a670fa428bb50c330c318c6
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuber/Examples/WebCamTextureCVVTuberExample/WebCamTextureCVVTuberExample_SRP.unity
+    guid: b2d85c7654a1aac4ba727ec24044bfd0
+  - enabled: 1
+    path: Assets/CVVTuberExample/CVVTuber/Addons/VRMCVVTuber/Examples/VRMCVVTuberExample.unity
+    guid: 51b431f03ab7e7f418b2e8be614d6009
+  m_configObjects: {}

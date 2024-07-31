@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b589176a34b344b9ccbee2b7e7114a, type: 3}
+  m_Name: Meta
+  m_EditorClassIdentifier: 
+  ExporterVersion: UniVRM-0.92.0
+  Title: "\u305A\u3093\u3060\u3082\u3093\uFF08\u4EBA\u578B\uFF09"
+  Version: 1
+  Author: SSS LLC.
+  ContactInformation: sss@zunko.jp
+  Reference: 
+  Thumbnail: {fileID: 2800000, guid: 2b983d83644a06646841afd8219c889f, type: 3}
+  AllowedUser: 1
+  ViolentUssage: 1
+  SexualUssage: 1
+  CommercialUssage: 0
+  OtherPermissionUrl: https://zunko.jp/
+  LicenseType: 8
+  OtherLicenseUrl: https://zunko.jp/guideline.html

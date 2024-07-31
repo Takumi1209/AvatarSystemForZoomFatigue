@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AutoIdleAvatarMask
+  m_Mask: 00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: MHuman
+    m_Weight: 1
+  - m_Path: MHuman_Root
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_L_Femur
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee/MHuman_L_Ankle
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee/MHuman_L_Ankle/MHuman_L_FootVis1
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee/MHuman_L_Ankle/MHuman_L_FootVis1/MHuman_L_FootVis2
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee/MHuman_L_Ankle/MHuman_L_Toe
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_L_Femur/MHuman_L_Knee/MHuman_L_Ankle/MHuman_L_Toe/MHuman_L_ToeEnd
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee/MHuman_R_Ankle
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee/MHuman_R_Ankle/MHuman_R_FootVis1
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee/MHuman_R_Ankle/MHuman_R_FootVis1/MHuman_R_FootVis2
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee/MHuman_R_Ankle/MHuman_R_Toe
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_R_Femur/MHuman_R_Knee/MHuman_R_Ankle/MHuman_R_Toe/MHuman_R_ToeEnd
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_Spine1
+    m_Weight: 0
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Index1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Index1/MHuman_L_Index2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Index1/MHuman_L_Index2/MHuman_L_Index3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Index1/MHuman_L_Index2/MHuman_L_Index3/MHuman_L_Index4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Middle1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Middle1/MHuman_L_Middle2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Middle1/MHuman_L_Middle2/MHuman_L_Middle3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Middle1/MHuman_L_Middle2/MHuman_L_Middle3/MHuman_L_Middle4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Pinky1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Pinky1/MHuman_L_Pinky2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Pinky1/MHuman_L_Pinky2/MHuman_L_Pinky3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Pinky1/MHuman_L_Pinky2/MHuman_L_Pinky3/MHuman_L_Pinky4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Ring1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Ring1/MHuman_L_Ring2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Ring1/MHuman_L_Ring2/MHuman_L_Ring3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Ring1/MHuman_L_Ring2/MHuman_L_Ring3/MHuman_L_Ring4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Thumb1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Thumb1/MHuman_L_Thumb2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Thumb1/MHuman_L_Thumb2/MHuman_L_Thumb3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_L_Clav/MHuman_L_Shoulder/MHuman_L_Elbow/MHuman_L_Wrist/MHuman_L_Hand/MHuman_L_Thumb1/MHuman_L_Thumb2/MHuman_L_Thumb3/MHuman_L_Thumb4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_Neck
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_Neck/MHuman_Head
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_Neck/MHuman_Head/MHuman_Head_End
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Index1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Index1/MHuman_R_Index2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Index1/MHuman_R_Index2/MHuman_R_Index3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Index1/MHuman_R_Index2/MHuman_R_Index3/MHuman_R_Index4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Middle1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Middle1/MHuman_R_Middle2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Middle1/MHuman_R_Middle2/MHuman_R_Middle3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Middle1/MHuman_R_Middle2/MHuman_R_Middle3/MHuman_R_Middle4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Pinky1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Pinky1/MHuman_R_Pinky2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Pinky1/MHuman_R_Pinky2/MHuman_R_Pinky3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Pinky1/MHuman_R_Pinky2/MHuman_R_Pinky3/MHuman_R_Pinky4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Ring1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Ring1/MHuman_R_Ring2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Ring1/MHuman_R_Ring2/MHuman_R_Ring3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Ring1/MHuman_R_Ring2/MHuman_R_Ring3/MHuman_R_Ring4
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Thumb1
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Thumb1/MHuman_R_Thumb2
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Thumb1/MHuman_R_Thumb2/MHuman_R_Thumb3
+    m_Weight: 1
+  - m_Path: MHuman_Root/MHuman_Spine1/MHuman_Spine2/MHuman_Spine3/MHuman_Chest/MHuman_R_Clav/MHuman_R_Shoulder/MHuman_R_Elbow/MHuman_R_Wrist/MHuman_R_Hand/MHuman_R_Thumb1/MHuman_R_Thumb2/MHuman_R_Thumb3/MHuman_R_Thumb4
+    m_Weight: 1
