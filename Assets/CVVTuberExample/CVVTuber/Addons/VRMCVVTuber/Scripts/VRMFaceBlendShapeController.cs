@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRM;
+using System;
 
 namespace CVVTuber.VRM
 {
@@ -9,6 +10,8 @@ namespace CVVTuber.VRM
         [Header("[Target]")]
 
         public VRMBlendShapeProxy blendShapeProxy;
+
+        GameObject vrmObject;
 
         #region CVVTuberProcess
 
@@ -45,9 +48,15 @@ namespace CVVTuber.VRM
             base.UpdateValue();
         }
 
+      
+
         public float browHightVal = 0.85f;
         public float jawAngleVal = 65.0f;
         public float smileVal = 0.3f;
+
+        private float timeElapsed;
+        public float timeOut = 1.0f;
+        private float BeforeNod = 0f;
 
 
         protected override void UpdateFaceAnimation(List<Vector2> points)
@@ -165,17 +174,26 @@ namespace CVVTuber.VRM
              
             }
 
-            /*
+            
             if (enableNod)
-               {
-                   float nod = NodDitect(points);
-                 Debug.Log("nod " + nod);
-                   if (nod < 89.5f)
-                   {
-                       blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Fun), 1.0f);
-                   }
-               }
-            */
+            {
+                timeElapsed += Time.deltaTime;
+                float Nod = NodDitect(points);
+                vrmObject = GameObject.Find("VRM");
+
+                if (timeElapsed >= timeOut)
+                {
+                   // Debug.Log("Nod: " + Math.Abs(Nod - BeforeNod));
+                    if (Math.Abs(Nod - BeforeNod) > 0.175f)
+                    {
+                        vrmObject.transform.position = Vector3.Lerp(vrmObject.transform.position, new Vector3(vrmObject.transform.position.x, vrmObject.transform.position.y - 0.05f, vrmObject.transform.position.z), 0.2f);
+                        
+                    }
+                    BeforeNod = Nod;
+                }
+                vrmObject.transform.position = Vector3.Lerp(vrmObject.transform.position, new Vector3(vrmObject.transform.position.x, 0.0f, vrmObject.transform.position.z), 0.2f);
+            }
+            
         }
 
         #endregion

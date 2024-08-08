@@ -1813,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6244077196861866926, guid: 4475854a3ce1ad845aa52e6e9c36a912, type: 3}
       propertyPath: m_Name
-      value: Zundamon_human_vrm
+      value: VRM
       objectReference: {fileID: 0}
     - target: {fileID: 6261343136170635556, guid: 4475854a3ce1ad845aa52e6e9c36a912, type: 3}
       propertyPath: m_DirtyAABB
@@ -1940,7 +1940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114653949975449806, guid: 3da85ad0a14e5bc40b1ce6f8b7e67b60, type: 3}
       propertyPath: enableNod
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114653949975449806, guid: 3da85ad0a14e5bc40b1ce6f8b7e67b60, type: 3}
       propertyPath: enableBrow

@@ -195,19 +195,11 @@ namespace CVVTuber
 
         protected virtual float NodDitect(List<Vector2> points)
         {
-            float nod = (float)(Math.Atan(points[44].y - points[29].y) - Math.Atan(points[35].y - points[29].y) * 180 / Math.PI);
-            /*float averageNod = 0;
-             nodList.Add(nod);
-             if (nodList.Count > 10)
-             {
-                 nodList.RemoveAt(0);
-             }
-             foreach (float n in nodList)
-             {
-                 averageNod += n;
-             }
-             averageNod = averageNod / nodList.Count; */
-            return Math.Abs(nod);
+
+            float noseY = points[30].y;
+
+            return noseY;
+           
         }
     }
 }
