@@ -68,12 +68,12 @@ namespace CVVTuber.VRM
                 if (jawangle > jawAngleVal + 50.0f || jawangle < jawAngleVal)
                 {
 
-                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Hachume), 1.0f);
+                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Question), 1.0f);
 
                 }
                 else
                 {
-                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Hachume), 0.0f);
+                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Question), 0.0f);
                 }
 
 
@@ -95,7 +95,7 @@ namespace CVVTuber.VRM
                 }
                 BrowParam = Mathf.Lerp(BrowParam, browHeight, browLeapT);
 
-                blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Star), BrowParam);
+                blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Surprised), BrowParam);
 
             }
 

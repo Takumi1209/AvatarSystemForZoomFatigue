@@ -57,9 +57,11 @@ namespace VRM
 
         Blink_L,
         Blink_R,
-
-        Hachume,
-        Star,
+        //original
+        Happy,
+        Relaxed,
+        Surprised,
+        Question,
 
     }
 

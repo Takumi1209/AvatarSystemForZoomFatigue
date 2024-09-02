@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 0}
   BlendShapeName: Hachume
-  Preset: 18
+  Preset: 21
   Values:
   - RelativePath: "\u982D"
     Index: 36

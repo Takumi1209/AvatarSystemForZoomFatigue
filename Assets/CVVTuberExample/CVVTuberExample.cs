@@ -37,7 +37,7 @@ namespace CVVTuberExample
         // Use this for initialization
         void Start()
         {
-            exampleTitle.text = "Avatar System For Zoom Fatigue";
+            exampleTitle.text = "Avatar Motion System For Dealing With Zoom Fatigue";
 
             versionInfo.text = Core.NATIVE_LIBRARY_NAME + " " + OpenCVForUnity.UnityUtils.Utils.getVersion() + " (" + Core.VERSION + ")";
             versionInfo.text += " / dlibfacelandmarkdetector" + " " + DlibFaceLandmarkDetector.UnityUtils.Utils.getVersion();

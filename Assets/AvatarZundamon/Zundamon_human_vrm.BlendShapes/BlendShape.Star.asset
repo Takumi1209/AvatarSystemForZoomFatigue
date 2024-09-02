@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 0}
   BlendShapeName: Star
-  Preset: 19
+  Preset: 20
   Values:
   - RelativePath: "\u982D"
     Index: 4
