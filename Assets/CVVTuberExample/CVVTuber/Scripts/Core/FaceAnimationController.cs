@@ -193,13 +193,20 @@ namespace CVVTuber
 
         }
 
-        protected virtual float NodDitect(List<Vector2> points)
+        protected virtual float noseDitect(List<Vector2> points)
         {
 
             float noseY = points[30].y;
 
-            return noseY;
-           
+            return noseY;  
+        }
+
+        protected virtual float chinDitect(List<Vector2> points)
+        {
+
+            float chinY = points[8].y;
+
+            return chinY;
         }
     }
 }

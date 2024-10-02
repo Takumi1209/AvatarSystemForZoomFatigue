@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRM;
 using System;
+using System.Runtime.CompilerServices;
+using OpenCVForUnityExample;
 
 namespace CVVTuber.VRM
 {
@@ -53,11 +55,13 @@ namespace CVVTuber.VRM
         public float browHightVal = 0.85f;
         public float jawAngleVal = 65.0f;
         public float smileVal = 0.3f;
+        public float nodVal = 16f;
+
 
         private float timeElapsed;
         public float timeOut = 1.0f;
-        private float BeforeNod = 0f;
-
+        public float prevNose = 0;
+        public float prevChin = 0;
 
         protected override void UpdateFaceAnimation(List<Vector2> points)
         {
@@ -68,12 +72,12 @@ namespace CVVTuber.VRM
                 if (jawangle > jawAngleVal + 50.0f || jawangle < jawAngleVal)
                 {
 
-                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Question), 1.0f);
+                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Relaxed), 1.0f);
 
                 }
                 else
                 {
-                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Question), 0.0f);
+                    blendShapeProxy.AccumulateValue(BlendShapeKey.CreateFromPreset(BlendShapePreset.Relaxed), 0.0f);
                 }
 
 
@@ -178,20 +182,33 @@ namespace CVVTuber.VRM
             if (enableNod)
             {
                 timeElapsed += Time.deltaTime;
-                float Nod = NodDitect(points);
+                float Nose = noseDitect(points);
+                float Chin = chinDitect(points);
+
                 vrmObject = GameObject.Find("VRM");
+                Transform transform = vrmObject.transform;
+                Vector3 originalPos = new Vector3(0, 0, 0);
+                Vector3 lowerPos = new Vector3(0, -0.05f, 0);
 
                 if (timeElapsed >= timeOut)
                 {
-                   // Debug.Log("Nod: " + Math.Abs(Nod - BeforeNod));
-                    if (Math.Abs(Nod - BeforeNod) > 0.175f)
+               
+                   if (Mathf.Abs(Nose - prevNose) > nodVal && Mathf.Abs(Chin - prevChin) > nodVal)
                     {
-                        vrmObject.transform.position = Vector3.Lerp(vrmObject.transform.position, new Vector3(vrmObject.transform.position.x, vrmObject.transform.position.y - 0.05f, vrmObject.transform.position.z), 0.2f);
-                        
+                        Debug.Log("Nod");
+                        transform.position = Vector3.Lerp(originalPos, lowerPos, 0.5f);
+
                     }
-                    BeforeNod = Nod;
+                   else
+                    {
+                       // transform.position = Vector3.Lerp(lowerPos, originalPos, 0.5f);
+                    }
+                    transform.position = Vector3.Lerp(lowerPos, originalPos, 0.5f);
+                    prevNose = Nose;
+                    prevChin = Chin;
+                    timeElapsed = 0.0f;
                 }
-                vrmObject.transform.position = Vector3.Lerp(vrmObject.transform.position, new Vector3(vrmObject.transform.position.x, 0.0f, vrmObject.transform.position.z), 0.2f);
+               
             }
             
         }
