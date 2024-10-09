@@ -4,6 +4,8 @@ using VRM;
 using System;
 using System.Runtime.CompilerServices;
 using OpenCVForUnityExample;
+using TMPro;
+using System.Collections;
 
 namespace CVVTuber.VRM
 {
@@ -14,6 +16,7 @@ namespace CVVTuber.VRM
         public VRMBlendShapeProxy blendShapeProxy;
 
         GameObject vrmObject;
+
 
         #region CVVTuberProcess
 
@@ -55,13 +58,17 @@ namespace CVVTuber.VRM
         public float browHightVal = 0.85f;
         public float jawAngleVal = 65.0f;
         public float smileVal = 0.3f;
-        public float nodVal = 16f;
+        public float nodVal = 10f;
 
 
         private float timeElapsed;
-        public float timeOut = 1.0f;
+        private float timeOut = 1.0f;
         public float prevNose = 0;
         public float prevChin = 0;
+        private Vector3 Velocity;
+        private float Speed = 10.0f;
+        private float maxSpeed = 5.0f;
+
 
         protected override void UpdateFaceAnimation(List<Vector2> points)
         {
@@ -177,7 +184,6 @@ namespace CVVTuber.VRM
                 // Debug.Log("EyeRatio " + EyeRatio);
              
             }
-
             
             if (enableNod)
             {
@@ -187,8 +193,10 @@ namespace CVVTuber.VRM
 
                 vrmObject = GameObject.Find("VRM");
                 Transform transform = vrmObject.transform;
-                Vector3 originalPos = new Vector3(0, 0, 0);
-                Vector3 lowerPos = new Vector3(0, -0.05f, 0);
+                Vector3 originalPosition = new Vector3(0, 0, 0);
+                Vector3 targetPosition = new Vector3(0, -0.05f, 0);
+
+                
 
                 if (timeElapsed >= timeOut)
                 {
@@ -196,19 +204,22 @@ namespace CVVTuber.VRM
                    if (Mathf.Abs(Nose - prevNose) > nodVal && Mathf.Abs(Chin - prevChin) > nodVal)
                     {
                         Debug.Log("Nod");
-                        transform.position = Vector3.Lerp(originalPos, lowerPos, 0.5f);
-
+                        StartCoroutine(enumerator());
                     }
-                   else
-                    {
-                       // transform.position = Vector3.Lerp(lowerPos, originalPos, 0.5f);
-                    }
-                    transform.position = Vector3.Lerp(lowerPos, originalPos, 0.5f);
                     prevNose = Nose;
                     prevChin = Chin;
                     timeElapsed = 0.0f;
                 }
-               
+
+                IEnumerator enumerator()
+                {
+                    transform.position = Vector3.Lerp(originalPosition, targetPosition, 1.0f);
+                    yield return new WaitForSeconds(0.75f);
+                    transform.position = Vector3.Lerp(targetPosition, originalPosition, 1.0f);
+                    yield return new WaitForSeconds(1.0f);
+
+                }
+
             }
             
         }
