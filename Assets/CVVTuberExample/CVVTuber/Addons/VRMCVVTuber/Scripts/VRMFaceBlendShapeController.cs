@@ -65,9 +65,6 @@ namespace CVVTuber.VRM
         private float timeOut = 1.0f;
         public float prevNose = 0;
         public float prevChin = 0;
-        private Vector3 Velocity;
-        private float Speed = 10.0f;
-        private float maxSpeed = 5.0f;
 
 
         protected override void UpdateFaceAnimation(List<Vector2> points)
