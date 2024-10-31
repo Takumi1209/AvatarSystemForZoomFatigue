@@ -7,6 +7,8 @@ using OpenCVForUnityExample;
 using TMPro;
 using System.Collections;
 using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
+using UnityEngine.UI;
+using JetBrains.Annotations;
 
 namespace CVVTuber.VRM
 {
@@ -18,6 +20,7 @@ namespace CVVTuber.VRM
 
         GameObject vrmObject;
         public Transform LookAtRoot;
+        public Button Button;
 
 
         #region CVVTuberProcess
@@ -189,8 +192,12 @@ namespace CVVTuber.VRM
                 timeElapsed += Time.deltaTime;
                 float Nose = noseDitect(points);
                 float Chin = chinDitect(points);
-                Vector3 currentPosition = LookAtRoot.position;
+                Vector3 currentPosition = LookAtRoot.localPosition;
 
+                void onButtonClicked()
+                {
+                    currentPosition = LookAtRoot.localPosition;
+                }
 
                 if (timeElapsed >= timeOut)
                 {
@@ -207,14 +214,14 @@ namespace CVVTuber.VRM
 
                 IEnumerator NodCoroutine()
                 {
-                    for (int i = 100; i > 69; i--)
+                    for (float i = 100 * currentPosition.y; i > 69 * currentPosition.y; i--)
                     {
-                        LookAtRoot.localPosition = new Vector3(0, 0.01f * i , 0);
+                        LookAtRoot.localPosition = new Vector3(LookAtRoot.position.x, 0.01f * i , LookAtRoot.position.z);
                         yield return new WaitForSeconds(0.01f);
                     }
-                    for (int i = 70; i < 101; i++)
+                    for (float i = 70 * currentPosition.y; i < 101 * currentPosition.y; i++)
                     {
-                        LookAtRoot.localPosition = new Vector3(0, 0.01f * i, 0);
+                        LookAtRoot.localPosition = new Vector3(LookAtRoot.position.x, 0.01f * i, LookAtRoot.position.z);
                         yield return new WaitForSeconds(0.01f);
                     }
                     
