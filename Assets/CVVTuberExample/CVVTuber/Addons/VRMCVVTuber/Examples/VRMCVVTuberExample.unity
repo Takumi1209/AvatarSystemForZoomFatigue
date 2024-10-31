@@ -1150,7 +1150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4670021648880408, guid: f48cde3504f40db40aaa076341561f75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4670021648880408, guid: f48cde3504f40db40aaa076341561f75, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1941,9 +1941,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 128856544}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 2.8
+  m_MaxValue: 2
   m_WholeNumbers: 0
-  m_Value: 1.4
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2895,6 +2895,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 86b0dd7a4707ba540972e6f2dea3f83d, type: 2}
+    - target: {fileID: 3336618613840192137, guid: 4475854a3ce1ad845aa52e6e9c36a912, type: 3}
+      propertyPath: m_stiffnessForce
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3397130951002336051, guid: 4475854a3ce1ad845aa52e6e9c36a912, type: 3}
       propertyPath: m_DirtyAABB
       value: 0
@@ -3315,6 +3319,10 @@ PrefabInstance:
       propertyPath: enableNod
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114653949975449806, guid: 3da85ad0a14e5bc40b1ce6f8b7e67b60, type: 3}
+      propertyPath: LookAtRoot
+      value: 
+      objectReference: {fileID: 1340195593}
     - target: {fileID: 114653949975449806, guid: 3da85ad0a14e5bc40b1ce6f8b7e67b60, type: 3}
       propertyPath: enableBrow
       value: 1

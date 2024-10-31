@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using OpenCVForUnityExample;
 using TMPro;
 using System.Collections;
+using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
 
 namespace CVVTuber.VRM
 {
@@ -16,6 +17,7 @@ namespace CVVTuber.VRM
         public VRMBlendShapeProxy blendShapeProxy;
 
         GameObject vrmObject;
+        public Transform LookAtRoot;
 
 
         #region CVVTuberProcess
@@ -187,34 +189,35 @@ namespace CVVTuber.VRM
                 timeElapsed += Time.deltaTime;
                 float Nose = noseDitect(points);
                 float Chin = chinDitect(points);
+                Vector3 currentPosition = LookAtRoot.position;
 
-                vrmObject = GameObject.Find("VRM");
-                Transform transform = vrmObject.transform;
-                Vector3 originalPosition = new Vector3(0, 0, 0);
-                Vector3 targetPosition = new Vector3(0, -0.05f, 0);
-
-                
 
                 if (timeElapsed >= timeOut)
                 {
                
                    if (Mathf.Abs(Nose - prevNose) > nodVal && Mathf.Abs(Chin - prevChin) > nodVal)
-                    {
+                   {
                         Debug.Log("Nod");
-                        StartCoroutine(enumerator());
+                        StartCoroutine(NodCoroutine());
                     }
                     prevNose = Nose;
                     prevChin = Chin;
                     timeElapsed = 0.0f;
                 }
 
-                IEnumerator enumerator()
+                IEnumerator NodCoroutine()
                 {
-                    transform.position = Vector3.Lerp(originalPosition, targetPosition, 1.0f);
-                    yield return new WaitForSeconds(0.75f);
-                    transform.position = Vector3.Lerp(targetPosition, originalPosition, 1.0f);
-                    yield return new WaitForSeconds(1.0f);
-
+                    for (int i = 100; i > 69; i--)
+                    {
+                        LookAtRoot.localPosition = new Vector3(0, 0.01f * i , 0);
+                        yield return new WaitForSeconds(0.01f);
+                    }
+                    for (int i = 70; i < 101; i++)
+                    {
+                        LookAtRoot.localPosition = new Vector3(0, 0.01f * i, 0);
+                        yield return new WaitForSeconds(0.01f);
+                    }
+                    
                 }
 
             }
