@@ -21,6 +21,7 @@ namespace CVVTuber.VRM
         GameObject vrmObject;
         public Transform LookAtRoot;
         public Button Button;
+        Vector3 currentPosition;
 
 
         #region CVVTuberProcess
@@ -192,12 +193,12 @@ namespace CVVTuber.VRM
                 timeElapsed += Time.deltaTime;
                 float Nose = noseDitect(points);
                 float Chin = chinDitect(points);
-                Vector3 currentPosition = LookAtRoot.localPosition;
 
-                void onButtonClicked()
+                Button.onClick.AddListener(() =>
                 {
-                    currentPosition = LookAtRoot.localPosition;
-                }
+                    currentPosition = LookAtRoot.position;
+                    Debug.Log(currentPosition);
+                });
 
                 if (timeElapsed >= timeOut)
                 {
